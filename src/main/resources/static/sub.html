@@ -2,9 +2,143 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Sub</title>
+    <title>Main</title>
+    <link rel="stylesheet" href="/css/common.css">
+    <link rel="stylesheet" href="/css/header.css">
+    <link rel="stylesheet" href="/css/footer.css">
+    <link rel="stylesheet" href="/css/sub.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:ital,wght@0,200;0,300;0,400;0,600;0,700;0,900;1,200;1,300;1,400;1,600;1,700;1,900&display=swap" rel="stylesheet">
+    <script defer src="/js/header.js" type="text/javascript" charset="utf-8"></script>
+    <script defer src="/js/sub.js" type="text/javascript" charset="utf-8"></script>
+    <script src="https://kit.fontawesome.com/2c6079555a.js" crossorigin="anonymous"></script>
 </head>
 <body>
-
+<header class="off">
+    <a class="logo">
+        <img src="img/logo_kor.svg" class="on">
+        <img src="img/logo_kor_w.svg" class="off">
+    </a>
+    <nav>
+        <ul>
+            <li><a href="/content.php?cid=about"><span>회사소개</span></a>
+                <ul>
+                    <li><a href="/content.php?cid=about">회사개요</a></li>
+                    <li><a href="/content.php?cid=history">회사연혁</a></li>
+                    <li><a href="/content.php?cid=ci">CI</a></li>
+                    <li><a href="/content.php?cid=recruit">인력채용</a></li>
+                    <li><a href="/content.php?cid=map">찾아오시는 길</a></li>
+                </ul>
+            </li>
+            <li><a href="/"><span>솔루션</span></a>
+                <ul>
+                    <li><a href="/">보안솔루션</a></li>
+                    <li><a href="/">DT사업</a></li>
+                </ul>
+            </li>
+            <li><a href="/"><span>서비스</span></a>
+                <ul>
+                    <li><a href="/">보안관제</a></li>
+                    <li><a href="/">보안컨설팅</a></li>
+                    <li><a href="/">클라우드</a></li>
+                    <li><a href="/">보안SI</a></li>
+                    <li><a href="/">통합유지보수</a></li>
+                </ul>
+            </li>
+            <li><a href="/bbs/board.php?bo_table=notice"><span>고객지원</span></a>
+                <ul>
+                    <li><a href="/bbs/board.php?bo_table=notice">보안공지</a></li>
+                    <li><a href="https://www.cmteyes.co.kr" target="_blank">고객CRM</a></li>
+                </ul>
+            </li>
+        </ul>
+    </nav>
+    <ul class="lang">
+        <li><a class="active">KOR</a></li>
+        <li><a>ENG</a></li>
+    </ul>
+</header>
+<main>
+    <section>
+        <img src="img/about01.jpg">
+        <ul>
+            <li>Home</li>
+            <li>솔루션</li>
+            <li>보안솔루션</li>
+            <li>Fortinet</li>
+        </ul>
+    </section>
+    <section>
+        <ul>
+            <li class="on">Fortinet</li>
+            <li>Juniper</li>
+            <li>Radware</li>
+            <li>Symantec</li>
+            <li>Rapid7</li>
+            <li>Arbor</li>
+            <li>F5 Networks</li>
+            <li>Tippingpoint</li>
+        </ul>
+    </section>
+    <section>
+        <h3>제품소개</h3>
+    </section>
+    <section>
+        <h3>특장점</h3>
+    </section>
+    <section>
+        <h3>주요기능</h3>
+    </section>
+    <section class="contact open">
+        <a><i class="fas fa-chevron-right"></i></a>
+        <a><i class="fas fa-times"></i></a>
+        <dl>
+            <div>
+                <dt>제품문의</dt>
+                <dd>02-6011-1377</dd>
+            </div>
+            <div>
+                <dt>보안관제센터</dt>
+                <dd>02-6011-2337</dd>
+            </div>
+            <div>
+                <dt>FAX</dt>
+                <dd>02-463-1376</dd>
+            </div>
+            <div>
+                <dt>Community</dt>
+                <dd><a href="https://blog.naver.com/dtgate" target="_blank">Blog</a></dd>
+                <dd><a href="https://www.facebook.com/CMT-Informaion-Communication-107429781388328" target="_blank">Facebook</a></dd>
+                <dd><a href="https://twitter.com/cmtinfocomm" target="_blank">Twitter</a></dd>
+                <dd><a href="https://www.linkedin.com/company/cmtinfo" target="_blank">Linkedin</a></dd>
+                <dd><a href="https://www.youtube.com/channel/UC4gbO9WcU1LbCJ9QFMgL__A" target="_blank">YouTube</a></dd>
+            </div>
+        </dl>
+    </section>
+</main>
+<footer>
+    <section>
+        <ul>
+            <li><a>이용약관 및 법적고지</a></li>
+            <li><a>개인정보 처리방침</a></li>
+            <li><a>회사개요</a></li>
+            <li><a>인력채용</a></li>
+        </ul>
+    </section>
+    <section class="address">
+        <address>
+            <ul>
+                <li>(04798) 서울시 성동구 성수이로22길 37, 803호 <br>(성수동2가, 아크밸리)</li>
+                <!--                <br class="active">-->
+                <li>Tel : 02-6011-1377</li>
+                <li>Fax : 02-463-1376</li>
+                <li>E-mail: adm@cmtinfo.co.kr</li>
+                <li>사업자번호 : 215-87-14581</li>
+            </ul>
+            <p>COPYRIGHT © CMT정보통신 <br>ALL RIGHTS RESERVED.</p>
+        </address>
+    </section>
+</footer>
 </body>
 </html>
