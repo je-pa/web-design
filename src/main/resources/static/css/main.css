@@ -1,0 +1,15 @@
+main > section{ height: 60vh; width: 100%;}
+
+main > section:nth-child(1){ background: #7AB5B2; position: relative; }
+main > section:nth-child(1) img {width: 100%;}
+main > section:nth-child(1) h3 { font-size: 30px; color: white; position: absolute; left: calc(50% - 600px); top: 20%; }
+main > section:nth-child(1) p{ position: absolute; left: calc(50% - 600px); bottom: 5%; font-size: 17px; color: white;}
+main > section:nth-child(2){ background: #FFF7D6; position: relative; }
+
+main > .service h3, main > .solution h3{ width: 1200px; margin:auto; font-size: 40px; text-align: center; padding: 48px 0  35px 0;}
+main > .service ul{ width: 1200px; margin:auto; display: flex; justify-content: space-between;}
+main > .service ul li { width:100%; height: 200px; position: relative; text-align: center;}
+main > .service ul li p {font-weight: 600; font-size: 18px; position: absolute; bottom:-39px; left: 50%; transform: translate(-50%, 0);}
+main > .service ul li i{ z-index: 50;width: 200px;height: 200px; border-radius: 100px; line-height: 200px; background: #DDEEED; position: absolute; top:50%; left: 50%; transform: translate(-50%,-50%); font-size: 90px; color: #005D7D;}
+main > .service ul li:hover a{ cursor: pointer; z-index: 100; width: 200px; height: 200px; position: absolute; left: 20px; opacity: 0.7; border-radius: 100px; line-height: 200px; text-align: center; background: #464555; color: white; font-weight: 600; font-size: 30px; transition-duration:0.2s;}
+main > .service ul li a{border-radius: 100px;}

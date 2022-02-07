@@ -1,0 +1,7 @@
+footer{ width: 100%; background: #231f20; padding-bottom: 40px;}
+footer > section > ul { height: 75px; display: flex; }
+footer section:nth-child(1) ul li{ height: 100%; width: 100%; line-height: 80px; color: #d1d2d4; text-align: center; border: 1px solid #4A4546;}
+footer section:nth-child(1) ul li:hover{ background-color: #4A4546; transition-duration:0.1s;}
+footer address {  padding: 27px 0 15px 20px;  color: #d1d2d4;}
+footer address li { display: inline-block; padding-right: 10px;}
+footer address br{ display: none;}
