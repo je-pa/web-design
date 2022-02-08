@@ -1,5 +1,10 @@
 body{margin:0; font-family: 'Source Sans Pro';}
-ul, dd ,h2, h3, p{ padding: 0;  margin:0;}
+ul, dd ,h2, h3, h4, h5, p{ padding: 0;  margin:0;}
 a{ text-decoration: none; }
 ul, li{ list-style: none; }
 address{ font-style: normal;}
+h3{ font-size: 30px;}
+h4{ font-size: 25px;}
+h5{ font-size: 20px;}
+p, dd{ font-size: 16px;}
+

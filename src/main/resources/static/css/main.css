@@ -1,18 +1,38 @@
-main > section:nth-child(1){ position: relative; background: #7AB5B2;}
-main > section:nth-child(1) img {width: 100%;}
-main > section:nth-child(1) h3 { font-size: 30px; color: white; position: absolute; left: calc(50% - 600px); top: 20%; }
 
-main > section:nth-child(2){ background: #7AB5B2; }
-main > section:nth-child(2) p{ font-size: 17px; color: white; padding: 30px calc(50% - 600px);}
+html {  scroll-behavior: smooth;  scroll-snap-type: y mandatory; scroll-padding-top: 80px;}
+
+main > section {  scroll-snap-align: start;}
+.section_button { position: fixed; right: 20px; top: 45%; width: 20px; z-index: 2000;}
+.section_button li{ text-align: center;}
+.section_button li a{font-size: 1px; color: #4A4546; border: 1px solid black; border-radius: 50%; width: 8px; height: 8px; display: inline-block; background: #4A4546; }
+
+main > .information { position: relative; background: #7AB5B2;}
+main > .information img {width: 100%;}
+main > .information h3 { font-size: 30px; color: white; position: absolute; left: calc(50% - 600px); top: 20%; }
+main > .information p{ font-size: 17px; color: white; padding: 30px calc(50% - 600px);}
 
 main > .solution{ position: relative; height: 600px; background: #EEFCFB;}
 
-main > .service {height: 600px; width: 100%; }
-main > .service h3, main > .solution h3, main > .partners h3{ width: 1200px; margin:auto; font-size: 40px; text-align: center; padding: 48px 0  35px 0;}
+.service h3, .solution h3, .partners h3{ width: 1200px; margin:auto; font-size: 30px; text-align: center; padding: 48px 0  50px 0;}
 
-main > .service ul{ width: 1200px; margin:auto; display: flex; justify-content: space-between;}
+main .solution ul{width: 1200px; margin: auto; display: flex; justify-content: space-around;}
+main .solution ul li{ width: 450px; height: 230px; background: #7AB5B2;position: relative;}
+main .solution ul li:hover{filter: brightness(40%); transform: translate(0, -8%); transition-duration: 0.3s;}
+main .solution ul li h5 {width:calc(100% - 40px);  font-weight: 600; color: white; position: absolute; bottom: 0; margin: 20px;}
+main .solution ul li h5 i{ position: absolute; font-size: 18px; right: 0; bottom: 0; }
+
+main > .service {height: 600px; width: 100%; }
+main > .service ul{ width: 1200px; margin: auto; display: flex; justify-content: space-between;}
 main > .service ul li { width:100%; height: 200px; position: relative; text-align: center;}
-main > .service ul li p {font-weight: 600; font-size: 18px; position: absolute; bottom:-39px; left: 50%; transform: translate(-50%, 0);}
+main > .service ul li h5 {font-weight: 600; position: absolute; bottom:-39px; left: 50%; transform: translate(-50%, 0);}
 main > .service ul li i{ z-index: 50;width: 200px;height: 200px; border-radius: 100px; line-height: 200px; background: #DDEEED; position: absolute; top:50%; left: 50%; transform: translate(-50%,-50%); font-size: 90px; color: #005D7D;}
 main > .service ul li:hover a{ cursor: pointer; z-index: 100; width: 200px; height: 200px; position: absolute; left: 20px; opacity: 0.7; border-radius: 100px; line-height: 200px; text-align: center; background: #464555; color: white; font-weight: 600; font-size: 30px; transition-duration:0.2s;}
 main > .service ul li a{border-radius: 100px;}
+
+main > .partners { width: 100%; height:320px; background: white;  background: #F1F1E6; margin: 0 auto 0 auto; position: relative; }
+main > .partners ul { width: 1100px; margin: auto; overflow: hidden; height: 50px; position: relative; }
+main > .partners > ul li { display: block; height: 50px; line-height: 50px; position: absolute;  }
+main > .partners > ul li > a { height: 100px; display: block; }
+main > .partners img { vertical-align: middle; border: 1px solid #DAE8E7; }
+main > .partners .fa-chevron-left{ position: absolute; color: #231f20; top: calc(135.27px + 25px); transform: translate(-50%, -50%); left: calc(50% - 600px); font-size: 20px;}
+main > .partners .fa-chevron-right{ position: absolute; color: #231f20; top: calc(135.27px + 25px); transform: translate(-50%, -50%); right: calc(50% - 600px); font-size: 20px;}

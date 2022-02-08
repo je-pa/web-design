@@ -1,7 +1,7 @@
 header{ width: 100%;  height: 80px; position: fixed; top: 0; z-index: 2000;}
 /*header:hover {height: 400px;}*/
 header.on{ background: white; box-shadow: 0 4px 4px -4px #dfe6e9;}
-header.off{ background: rgba(0,0,0,0);}
+header.off{ background: rgba(0,0,0,0.1); }
 
 header .logo { position: absolute; left: 20px; top: 40px; transform: translate(0, -50%); }
 header .logo img{ height: 22px;}
@@ -9,7 +9,7 @@ header.on img.off{display: none;}
 header.off img.on{display: none;}
 
 header nav{ width: 800px; height: 100%; margin: auto;}
-header nav:hover{ width: 100%; height: 400px; background: white; animation-duration: 0.2s; animation-name: slideDown;}
+header nav:hover{ width: 100%; height: 400px; background: white; box-shadow: 0 4px 4px -4px #dfe6e9; animation-duration: 0.2s; animation-name: slideDown;}
 @keyframes slideDown {
     from { height: 80px; }
     to { height: 400px; }
