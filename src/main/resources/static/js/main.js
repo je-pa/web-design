@@ -1,58 +1,3 @@
-//test
-//client rolling banner
-let move = 1;//-1: 왼쪽으로 1:오른쪽으로
-const moveLeft = document.querySelector('.partners a .fa-chevron-left');
-const moveRight = document.querySelector('.partners a .fa-chevron-right');
-moveLeft.addEventListener('mouseover',()=>{
-    move = -1;
-})
-moveRight.addEventListener('mouseover',()=>{
-    move = 1;
-})
-
-window.onload = function() {
-    let bannerLeft=0;
-    let first=1;
-    let last;
-    let imgCnt=0;
-    let $img = $(".partners ul li");
-    let $first;
-    let $last;
-
-    $img.each(function(){   // 5px 간격으로 배너 처음 위치 시킴
-        $(this).css("left",bannerLeft);
-        bannerLeft += $(this).width()+5;
-        $(this).attr("id", "banner"+(++imgCnt));  // img에 id 속성 추가
-    });
-
-    if( imgCnt > 9){                //배너 9개 이상이면 이동시킴
-        last = imgCnt;
-
-        setInterval(function() {
-            $img.each(function(){
-                $(this).css("left", $(this).position().left+move); // 1px씩 왼쪽으로 이동
-            });
-            $first = $("#banner"+first);
-            $last = $("#banner"+last);
-            if(move==-1 && $first.position().left < -200) {    // 제일 앞에 배너 제일 뒤로 옮김
-                $first.css("left", $last.position().left + $last.width()+5 );
-                first++;
-                last++;
-                if(last > imgCnt) { last=1; }
-                if(first > imgCnt) { first=1; }
-            }else if(move==1 && $last.position().left > 1300) {    // 제일 앞에 배너 제일 뒤로 옮김
-                $last.css("left", $first.position().left - $first.width()-5 );
-                first--;
-                last--;
-                if(last < 1) { last=imgCnt; }
-                if(first < 1) { first=imgCnt; }
-            }
-        }, 50);   //여기 값을 조정하면 속도를 조정할 수 있다.(위에 1px 이동하는 부분도 조정하면
-        //깔끔하게 변경가능하다
-    }
-};
-
-
 let timer;
 const mainSections = document.querySelectorAll('main section');
 const lists = document.querySelectorAll('.section_button li a');
@@ -94,3 +39,5 @@ function setColor(index){
 
     }
 }
+
+$('.carousel').carousel({ interval: 3500 })
